@@ -27,7 +27,7 @@ function Header({ datas, currencyFormater }) {
   const totalSum = currencyFormater(
     datas.map((data) => data.profit).reduce((a, p) => (a += p))
   );
-  const percentage = Math.round((totalSum / datas.length + 1) * 100);
+  const percentage = Math.round(totalSum / datas.length + 1) * 100;
 
   const btnsData = [
     {
@@ -52,7 +52,7 @@ function Header({ datas, currencyFormater }) {
   ];
   return (
     <div className="gap-4 flex flex-col">
-      <div className="form w-full flex items-center justify-between text-my-color-8">
+      <div className="form w-full  flex flex-col md:flex-row items-center justify-between text-my-color-8">
         <div className="border border-my-color-8 rounded-sm px-1">
           <div className="inputGroup">
             <span>
@@ -100,7 +100,7 @@ function Header({ datas, currencyFormater }) {
           </div>
         </div>
       </div>
-      <div className="balance bg-my-color-8 w-full flex items-center justify-between rounded-md p-4">
+      <div className="balance bg-my-color-8 w-full flex flex-col items-center justify-between rounded-md p-4 md:flex-row">
         <div>
           <p className="font-bold">Total Balance</p>
           <div className="flex items-center justify-start">

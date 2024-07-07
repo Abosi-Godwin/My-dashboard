@@ -36,7 +36,7 @@ export default function Nav({ currencyFormater }) {
   const tweakLinksIcons = ["ifsxxxte", "ojnjgkun", "fnxnvref"];
 
   return (
-    <div className="h-auto w-1/10 bg-my-color-8 px-3">
+    <div className="hidden sm:block h-auto w-1/10 bg-my-color-8 px-3">
       <div className="logo w-full flex items-center justify-between p-3">
         <p className="font-bold">SEQUENCE</p>
         <WidgetsOutlined />

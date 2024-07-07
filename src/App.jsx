@@ -10,7 +10,6 @@ import Dashboard from "./components/Dasboard";
 defineElement(lottie.loadAnimation);
 
 function formatCurrency(number) {
-  console.log(number);
   return new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
