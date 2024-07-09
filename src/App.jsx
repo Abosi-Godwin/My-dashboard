@@ -18,10 +18,10 @@ function formatCurrency(number) {
 
 function App() {
   return (
-    <>
+    <div className="w-screen flex items-center justify-between">
       <Nav currencyFormater={formatCurrency} />
       <Dashboard currencyFormater={formatCurrency} />
-    </>
+    </div>
   );
 }
 
